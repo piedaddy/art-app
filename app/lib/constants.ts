@@ -738,7 +738,22 @@ export const GET_URL =
 export enum SEARCH_PARAMS {
   DEPARTMENT = 'departmentId',
   DEPARTMENTS = 'departmentIds',
+  MEDIUM = 'medium',
+  CONTENT = 'q',
+  DATE_BEGIN = 'dateBegin',
+  DATE_END = 'dateEnd',
 }
 
 export const OBJECTS_URL =
   'https://collectionapi.metmuseum.org/public/collection/v1/objects';
+
+export enum MEDIUM_TYPES {
+  CERAMICS = 'Ceramics',
+  FURNITURE = 'Furniture',
+  PAINTINGS = 'Paintings',
+  SCULPTURE = 'Sculpture',
+  TEXTILES = 'Textiles',
+  OIL = 'Oil on canvas',
+}
+
+export const MEDIUMS = Object.values(MEDIUM_TYPES);
